@@ -25,5 +25,8 @@ modules:
     user: {}
   - type: justfiles
     validate: true
+  - type: script
+    snippets:
+      - "mkdir /nix"
   - type: signing
 
