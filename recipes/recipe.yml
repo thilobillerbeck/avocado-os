@@ -9,7 +9,7 @@ modules:
   - type: files
     files:
       - source: system
-        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+        destination: /
   - type: rpm-ostree
     repos:
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
@@ -18,13 +18,12 @@ modules:
     install:
       - mullvad-vpn
   - type: default-flatpaks
-    notify: true # Send notification after install/uninstall is finished (true/false)
+    notify: true
     system:
       install:
-        - org.mozilla.firefox
-        - org.gnome.Loupe
-      remove:
-        - org.gnome.eog
+        - com.spotify.Client
     user: {}
+  - type: justfiles
+    validate: true
   - type: signing
 
