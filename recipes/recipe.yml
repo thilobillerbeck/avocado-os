@@ -22,11 +22,48 @@ modules:
     system:
       install:
         - com.spotify.Client
+        - com.github.mtkennerly.ludusavi
+        - com.github.wwmm.easyeffects
+        - com.heroicgameslauncher.hgl
+        - com.usebottles.bottles
+        - dev.deedles.Trayscale
+        - im.nheko.Nheko
+        - info.mumble.Mumble
+        - io.github.dimtpap.coppwr
+        - io.missioncenter.MissionCenter
+        - io.ossia.score
+        - io.podman_desktop.PodmanDesktop
+        - it.fabiodistasio.AntaresSQL
+        - it.mijorus.gearlever
+        - md.obsidian.Obsidian
+        - net.ankiweb.Anki
+        - net.retrodeck.retrodeck
+        - org.ardour.Ardour
+        - org.audacityteam.Audacity
+        - org.fedoraproject.MediaWriter
+        - org.filezillaproject.Filezilla
+        - org.godotengine.Godot
+        - org.inkscape.Inkscape
+        - org.mixxx.Mixxx
+        - org.mozilla.Thunderbird
+        - org.mozilla.firefox
+        - org.musescore.MuseScore
+        - org.onlyoffice.desktopeditors
+        - org.raspberrypi.rpi-imager
+        - org.rncbc.qpwgraph
+        - org.signal.Signal
+        - org.telegram.desktop
+        - org.zotero.Zotero
+        - page.kramo.Cartridges
     user: {}
   - type: justfiles
     validate: true
   - type: script
     snippets:
       - "mkdir /nix"
+  - type: systemd
+    system:
+      enabled:
+        - mullvad-daemon.service
   - type: signing
 
