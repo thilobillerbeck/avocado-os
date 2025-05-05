@@ -63,6 +63,10 @@ modules:
       - "mkdir /nix"
   - type: systemd
     system:
+      disabled:
+        - cec-onboot.service
+        - cec-onpoweroff.service
+        - cec-onsleep.service
       enabled:
         - mullvad-daemon.service
   - type: signing
