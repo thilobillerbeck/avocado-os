@@ -13,10 +13,13 @@ modules:
   - type: rpm-ostree
     repos:
       - https://repository.mullvad.net/rpm/stable/mullvad.repo
+      - https://repo.vivaldi.com/archive/vivaldi-fedora.repo
     optfix:
       - Mullvad VPN
+      - vivaldi
     install:
       - mullvad-vpn
+      - vivaldi-stable
   - type: default-flatpaks
     notify: true
     system:
