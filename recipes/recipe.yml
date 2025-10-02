@@ -28,7 +28,6 @@ modules:
           title: Flathub (system)
         install:
           - com.spotify.Client
-          - com.github.mtkennerly.ludusavi
           - com.github.wwmm.easyeffects
           - com.heroicgameslauncher.hgl
           - com.usebottles.bottles
@@ -48,7 +47,6 @@ modules:
           - org.audacityteam.Audacity
           - org.fedoraproject.MediaWriter
           - org.filezillaproject.Filezilla
-          - org.godotengine.Godot
           - org.inkscape.Inkscape
           - org.mixxx.Mixxx
           - org.mozilla.Thunderbird
