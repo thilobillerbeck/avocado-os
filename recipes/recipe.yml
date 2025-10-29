@@ -3,7 +3,7 @@
 name: avocado-os
 description: This is my personal OS image.
 base-image: ghcr.io/ublue-os/bazzite-dx
-image-version: 42
+image-version: 43
 
 modules:
   - type: files
