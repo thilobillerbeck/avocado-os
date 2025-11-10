@@ -1,6 +1,6 @@
 [Unit]
 Description=GPU driver setup for Nix on non-NixOS Linux systems
-After=network.target
+After=nix.mount
 
 [Service]
 Type=oneshot
