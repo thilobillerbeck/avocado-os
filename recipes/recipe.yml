@@ -34,4 +34,6 @@ modules:
       enabled:
         - mullvad-daemon.service
         - non-nixos-gpu.service
+      unmasked:
+        - non-nixos-gpu.service
   - type: signing
