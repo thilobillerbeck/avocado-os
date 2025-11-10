@@ -33,5 +33,5 @@ modules:
         - cec-onsleep.service
       enabled:
         - mullvad-daemon.service
+        - non-nixos-gpu.service
   - type: signing
-
