@@ -1,12 +1,10 @@
 [Unit]
 Description=GPU driver setup for Nix on non-NixOS Linux systems
-After=nix.mount
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/ln -nsf /home/thilo/.local/share/gpu-drivers /run/opengl-driver
-User=root
-Restart=no
 
 [Install]
 WantedBy=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=ln -nsf /home/thilo/.local/share/gpu-drivers /run/opengl-driver
+RemainAfterExit=yes
