@@ -27,13 +27,14 @@ modules:
       - "mkdir /nix"
   - type: systemd
     system:
+      masked:
+        - cec-onboot.service
+        - cec-onpoweroff.service
+        - cec-onsleep.service
       disabled:
         - cec-onboot.service
         - cec-onpoweroff.service
         - cec-onsleep.service
       enabled:
         - mullvad-daemon.service
-        - non-nixos-gpu.service
-      unmasked:
-        - non-nixos-gpu.service
   - type: signing
