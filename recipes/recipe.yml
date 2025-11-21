@@ -31,10 +31,14 @@ modules:
         - cec-onboot.service
         - cec-onpoweroff.service
         - cec-onsleep.service
+        - cec-active-source.service
+        - cec-poweroff-tv.service
       disabled:
         - cec-onboot.service
         - cec-onpoweroff.service
         - cec-onsleep.service
+        - cec-active-source.service
+        - cec-poweroff-tv.service
       enabled:
         - mullvad-daemon.service
   - type: signing
